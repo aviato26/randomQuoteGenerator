@@ -1,0 +1,7 @@
+
+document.getElementById('loadQuote').addEventListener("click", function(){printQuote(getRandomQuote)}, false);
+
+setInterval(function(){printQuote(getRandomQuote)}, 10000);
+
+these only worked when i added the printQuote function in a outer function in the methods
+this was a problem when i tried to nest callback functions
